@@ -36,6 +36,7 @@
 		$settings.apiKey = $apiKey == '' ? undefined : $apiKey
 		settings.saveSettings()
 		applyUnsetSettings()
+		settings.getModels()
 		close()
 	}
 

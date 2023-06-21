@@ -11,6 +11,7 @@ export function applyUnsetSettings(settings = {} as AppSettings) {
 	settings.possibleModels ??= []
 	settings.global ??= {} as AppSettings['global']
 	settings.global.prependedMessages ??= defaultInstructions
+	settings.gptModel ??= 'gpt-3.5-turbo-0613'
 	settings.titleGptModel ??= 'gpt-3.5-turbo-0613'
 
 	settings.global.aiOptions ??= {}
@@ -20,6 +21,15 @@ export function applyUnsetSettings(settings = {} as AppSettings) {
 }
 
 const settings = writable<AppSettings>()
+
+function getModels() {
+	const $settings = get(settings)
+	if ($settings.apiKey)
+		GetOpenAIModels().then(v => settings.update($settings => {
+			$settings.possibleModels = v
+			return $settings
+		}))
+}
 
 async function loadSettings() {
 	if (!browser)
@@ -39,9 +49,7 @@ async function loadSettings() {
 	applyUnsetSettings(settingsJSON)
 	settings.set(settingsJSON)
 
-	if (settingsJSON.apiKey)
-		GetOpenAIModels().then(v => settingsJSON.possibleModels = v)
-	
+	getModels()
 	saveSettings()
 }
 
@@ -63,5 +71,6 @@ function saveSettings() {
 
 export default {
 	...settings,
-	saveSettings
+	saveSettings,
+	getModels
 }
