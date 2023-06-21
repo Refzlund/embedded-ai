@@ -1,0 +1,130 @@
+@use 'scss-color-var/var';
+@use 'scss-color-var/v' as *;
+
+button {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 1rem;
+	color: hsla(0, 0%, 100%, .9);
+	background: none;
+	border: none;
+	outline: none;
+	min-height: 50px;
+	gap: 10px;
+	transition: .075s ease;
+	user-select: none;
+
+	background-color: v(button, c(button-default));
+	padding: 0px 25px;
+	border-radius: 6px;
+	box-shadow: 0px 0px 14px rgba(0, 0, 0, .2);
+
+	&:hover:not(:disabled) {
+		background-color: v(button__hover, c(button-default-hover));
+		cursor: pointer;
+	}
+
+	&:active:not(:disabled),
+	&[active]:not(:disabled) {
+		transform: scale(.95);
+	}
+
+
+
+	// Focus: Draw a box outside the button
+	&::after {
+		opacity: 0;
+		content: '';
+		position: absolute;
+		$p: 0px;
+		top: $p;
+		left: $p;
+		right: $p;
+		bottom: $p;
+		transition: .125s ease;
+		border: 2px solid hsla(var.H(primary), 50%, 80%);
+		border-radius: 8px;
+		pointer-events: none;
+	}
+
+	&:focus:not(:active)::after {
+		opacity: 1;
+		$p: -5px;
+		top: $p;
+		left: $p;
+		right: $p;
+		bottom: $p;
+	}
+
+	&:disabled {
+		// desaturate effect
+		filter: grayscale(.5) brightness(.7);
+		cursor: default;
+	}
+
+	&.icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		height: 50px;
+		min-width: 50px;
+
+		svg {
+			font-size: 22px;
+		}
+	}
+
+	&:has(.fill) {
+		position: relative;
+
+		>.fill {
+			border-radius: inherit;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background-color: transparent;
+
+			>span {
+				z-index: 1;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: calc(100% * v(t));
+				backdrop-filter: brightness(1.2);
+				opacity: 1;
+				transition: .05s ease;
+				z-index: 0;
+			}
+		}
+	}
+
+	&.warn {
+		background-color: c(warn);
+		color: c(warn-color);
+
+		--button: ${c(warn)};
+		--button__hover: ${c(warn-color-hover)};
+
+		&:hover:not(:disabled) {
+			background-color: c(warn-hover);
+			color: c(warn-color-hover);
+		}
+	}
+}
+
+

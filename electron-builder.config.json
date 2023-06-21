@@ -1,0 +1,13 @@
+{
+	"asar": false,
+	"directories": { 
+		"output": "dist"
+	},
+	"files": [
+		"src/electron/.build/**/*.cjs", 
+		{
+			"from": "build", 
+			"to": ""
+		}
+	]
+}

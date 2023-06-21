@@ -1,0 +1,960 @@
+{
+  "lists": [
+    {
+      "id": "bcbee88c-744f-4d16-84cf-87577a4b9297",
+      "title": "Backlog",
+      "cards": [
+        {
+          "id": "2dd1cb90-3e2f-47b8-9a96-8c9821e15658",
+          "listId": "bcbee88c-744f-4d16-84cf-87577a4b9297",
+          "title": "Better Chat input",
+          "description": "",
+          "labels": [],
+          "checkboxes": [
+            {
+              "id": "86c15808-4967-4090-bc81-ff2573ab9669",
+              "title": "Auto-resizeable",
+              "checked": false
+            },
+            {
+              "id": "26c32138-8529-4c2e-821f-7291ed4a3d9a",
+              "title": "Manual resize for minimum size",
+              "checked": false
+            },
+            {
+              "id": "ce6432da-c301-4471-b7ef-29dc182a8bad",
+              "title": "Save settings",
+              "checked": false
+            }
+          ],
+          "comments": []
+        },
+        {
+          "id": "3599af30-5480-4b43-8513-79c754aff81c",
+          "listId": "bcbee88c-744f-4d16-84cf-87577a4b9297",
+          "title": "Micro-managed scroll behaviour",
+          "description": "Having the \"view\" extending below the latest chat message would allow for \"smooth\" scrolling. When the AI is procesing text, it will aim to overshoot the message box and adjusting it's scroll speed based on the speed it receives text. This hopefully results in a smooth experience.\n\n* If message-boxes have transitional height (another backlog item) — then there's no need for smooth scrolling.",
+          "labels": [
+            {
+              "id": "7abdfd77-0433-4e24-94cb-362dbd761134",
+              "title": "Description",
+              "color": "#344563"
+            }
+          ],
+          "checkboxes": [
+            {
+              "id": "68304883-9519-4cb9-8ea6-c962b89c44d4",
+              "title": "Adjust scroll when switching between formatted and raw message text",
+              "checked": false
+            },
+            {
+              "id": "6aa1dd78-2d06-4e25-b23b-2f5ff8c82e6e",
+              "title": "Add a scrollbar",
+              "checked": false
+            },
+            {
+              "id": "a35d4e61-acb1-4e9f-9540-c4ee02796981",
+              "title": "Keep scroll position when switching between view/edit of messages",
+              "checked": false
+            }
+          ],
+          "comments": []
+        },
+        {
+          "id": "1f55b453-eb12-4e7b-9827-7246b95068e4",
+          "listId": "bcbee88c-744f-4d16-84cf-87577a4b9297",
+          "title": "Transitional message-box height changes",
+          "description": "To add to the smoothness of the application and the way text is received, the messages height should be transitioned when receiving text.",
+          "labels": [
+            {
+              "id": "7abdfd77-0433-4e24-94cb-362dbd761134",
+              "title": "Description",
+              "color": "#344563"
+            }
+          ],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "ba23e52a-3215-4abb-9615-6f17e946eaa3",
+          "listId": "bcbee88c-744f-4d16-84cf-87577a4b9297",
+          "title": "Wake Word (Porcupine)",
+          "description": "https://www.npmjs.com/package/@picovoice/porcupine-node\nhttps://picovoice.ai/docs/benchmark/wake-word/",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "3b3630b5-fbec-465f-b863-af9b2c3314d0",
+          "listId": "bcbee88c-744f-4d16-84cf-87577a4b9297",
+          "title": "VAD (Voice Activation Detection) to end question",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "bcd755c4-1e73-4d21-886d-026183abc424",
+          "listId": "bcbee88c-744f-4d16-84cf-87577a4b9297",
+          "title": "Improve accessability",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "b6e83d14-17df-4623-b468-dad3ed303288",
+          "listId": "bcbee88c-744f-4d16-84cf-87577a4b9297",
+          "title": "Display $ projected cost for next prompt",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
+    },
+    {
+      "id": "fe1fa702-0ae3-4cf1-a0d1-d77e02480f2e",
+      "title": "Next up",
+      "cards": [
+        {
+          "id": "2382b96d-d871-4a80-b64e-b40589185093",
+          "listId": "fe1fa702-0ae3-4cf1-a0d1-d77e02480f2e",
+          "title": "Knowledge cutoff++",
+          "description": "",
+          "labels": [
+            {
+              "id": "7abdfd77-0433-4e24-94cb-362dbd761134",
+              "title": "Description",
+              "color": "#344563"
+            }
+          ],
+          "checkboxes": [
+            {
+              "id": "1302cc90-754f-4521-b6b5-f7900e2bb9ee",
+              "title": "Manual setting for cutoff",
+              "checked": false
+            },
+            {
+              "id": "78daaf11-e0eb-442f-b853-a5434031e2b8",
+              "title": "If a message goes over the token limit, cut the message, so that it stays inside the token limit.",
+              "checked": false
+            },
+            {
+              "id": "5d92d8d6-591e-4186-bdbc-b4778efd1036",
+              "title": "Toggle to automatically go from 4k to 16k version (if both available)",
+              "checked": false
+            },
+            {
+              "id": "2e8b8fb9-4976-4a2c-be79-4efffe9e8f02",
+              "title": "Toggle to automatically go from 8k to 32k version (if both available)",
+              "checked": false
+            }
+          ],
+          "comments": []
+        },
+        {
+          "id": "b91d3f9e-ebd8-4dc9-9cc1-251f9325620e",
+          "listId": "fe1fa702-0ae3-4cf1-a0d1-d77e02480f2e",
+          "title": "\"Extensions\" to extend the application",
+          "description": "",
+          "labels": [],
+          "checkboxes": [
+            {
+              "id": "ffd86b24-b16b-4baa-9096-a1c51f0c1d67",
+              "title": "Chat format processing",
+              "checked": false
+            },
+            {
+              "id": "07dbbd38-3df5-4947-bf13-2957630be65f",
+              "title": "GPT's \"Functions\" capabilities",
+              "checked": false
+            },
+            {
+              "id": "a6403540-309b-4d11-9dab-ae8547d5d4f1",
+              "title": "Debug option to load certain features (like functions) for every request",
+              "checked": false
+            }
+          ],
+          "comments": []
+        },
+        {
+          "id": "14208b47-4132-499c-a3bc-ca66a0974db6",
+          "listId": "fe1fa702-0ae3-4cf1-a0d1-d77e02480f2e",
+          "title": "Refactor styling (SCSS)",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
+    },
+    {
+      "id": "13a606dd-3565-48d0-a5c8-28760b312abf",
+      "title": "Todo",
+      "cards": [
+        {
+          "id": "6b3fe8be-00bb-4090-9b55-d9a22496c379",
+          "listId": "13a606dd-3565-48d0-a5c8-28760b312abf",
+          "title": "Scrollbars",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
+    },
+    {
+      "id": "59e901a4-a5c3-4fe4-8bd6-39da89dc60be",
+      "title": "Doing",
+      "cards": [
+        {
+          "id": "752d18c2-d96c-48fb-b12c-2e5a1ed45c02",
+          "listId": "59e901a4-a5c3-4fe4-8bd6-39da89dc60be",
+          "title": "Option - AI Model settings",
+          "description": "",
+          "labels": [],
+          "checkboxes": [
+            {
+              "id": "847015df-0ab0-4d8c-a0ec-23ffe8d5bd68",
+              "title": "Global AI Model settings (defaults)",
+              "checked": false
+            },
+            {
+              "id": "09cd325a-a093-4f83-90d0-f6bc63ae2b86",
+              "title": "Chat specific AI model settings",
+              "checked": false
+            },
+            {
+              "id": "47b0a333-d484-4cb4-b25e-16615b924c0d",
+              "title": "Prepended messages (local/global)",
+              "checked": false
+            },
+            {
+              "id": "9c3b306b-0fb2-4cf9-afcf-d2aeebd17ebc",
+              "title": "Settings savable \"templates\"",
+              "checked": false
+            }
+          ],
+          "comments": []
+        }
+      ]
+    },
+    {
+      "id": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+      "title": "Done",
+      "cards": [
+        {
+          "id": "3df522ac-2178-46ab-8baf-7b440729551c",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Turn send message/stop processing into one button",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "7ccbf4e9-195b-4351-9bc8-eb644bc283b7",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Display $ estimated cost",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "887b2ec8-d83b-41b7-aac6-1e3015ac0275",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "When editing and >>just saving<< it removes a lot of the content",
+          "description": "Due to multiple \"code blocks\" being in the markdown",
+          "labels": [
+            {
+              "id": "2d946e06-ce8d-4a4b-abbc-03cec682a9f7",
+              "title": "Bug",
+              "color": "#eb5a46"
+            },
+            {
+              "id": "7abdfd77-0433-4e24-94cb-362dbd761134",
+              "title": "Description",
+              "color": "#344563"
+            }
+          ],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "0b23ed12-f608-4863-b414-917e56d92166",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Issue when you keep regenerating a response",
+          "description": "",
+          "labels": [
+            {
+              "id": "2d946e06-ce8d-4a4b-abbc-03cec682a9f7",
+              "title": "Bug",
+              "color": "#eb5a46"
+            }
+          ],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "cef64742-b7e9-4b50-b89a-b36e97e22977",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Show current AI Model on the settings button",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "93a05540-ff67-4d12-b4c9-be8ebe3a5077",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "\"New chat\"",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "890f03fc-f2cd-4be6-940b-0730fc2250fa",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Show/switch message branch",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "f6395fb2-40c0-40ba-83c1-61b2646fcddf",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "AI Message: Continue after this response",
+          "description": "Should have icon action",
+          "labels": [
+            {
+              "id": "7abdfd77-0433-4e24-94cb-362dbd761134",
+              "title": "Description",
+              "color": "#344563"
+            }
+          ],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "79dbba91-0a7d-4c95-944c-1407d4e06b1b",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Human Message: Regenerate response",
+          "description": "Press edit -> Regenerate Save and regenerate response",
+          "labels": [
+            {
+              "id": "7abdfd77-0433-4e24-94cb-362dbd761134",
+              "title": "Description",
+              "color": "#344563"
+            }
+          ],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "20962235-9509-45ef-895c-389acaa8a12e",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Refactor session store",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "9258359b-adca-4769-9234-3227b8a557f2",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "View and load chat sessions",
+          "description": "",
+          "labels": [],
+          "checkboxes": [
+            {
+              "id": "d176c995-25ef-400c-a505-d3fe3123cfa4",
+              "title": "View",
+              "checked": true
+            },
+            {
+              "id": "19058626-e551-4db5-81df-43720fcd6911",
+              "title": "Load",
+              "checked": true
+            }
+          ],
+          "comments": []
+        },
+        {
+          "id": "21d5864a-6bec-4d0d-8753-a64f4c2bb493",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Chat session management",
+          "description": "",
+          "labels": [],
+          "checkboxes": [
+            {
+              "id": "a8968242-8755-48b3-9d3c-5a7b0e5fd1b2",
+              "title": "Manage chat through sessions",
+              "checked": true
+            },
+            {
+              "id": "bb058257-835e-4dd5-8272-943641046b71",
+              "title": "Ability to create new session",
+              "checked": true
+            }
+          ],
+          "comments": []
+        },
+        {
+          "id": "c3615dd0-ab8f-49d3-9101-eaeedc767d7b",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Generate title based on first message & response",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "2b67bb5a-312f-4262-9204-5e98ca9286ed",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Save chat sessions",
+          "description": "",
+          "labels": [],
+          "checkboxes": [
+            {
+              "id": "ba19b7d2-d1f8-4952-9b53-a24c793a040a",
+              "title": "Save file by id",
+              "checked": true
+            },
+            {
+              "id": "a3a010e3-0efd-4e1b-a18e-0517565b6cb7",
+              "title": "Save to meta file",
+              "checked": true
+            }
+          ],
+          "comments": []
+        },
+        {
+          "id": "69d0f576-1f3f-440f-8e01-6ccbb077dda9",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Knowledge cutoff",
+          "description": "",
+          "labels": [],
+          "checkboxes": [
+            {
+              "id": "8fd14797-3324-46aa-9156-d6b2a127fe33",
+              "title": "Automatically cutoff based on model size",
+              "checked": true
+            }
+          ],
+          "comments": []
+        },
+        {
+          "id": "e9aa4e68-b457-4025-af4e-73b60f94ed33",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Cancel AI processing doesnt work",
+          "description": "",
+          "labels": [
+            {
+              "id": "2d946e06-ce8d-4a4b-abbc-03cec682a9f7",
+              "title": "Bug",
+              "color": "#eb5a46"
+            }
+          ],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "1edd7c5c-d164-4105-b489-298e192e75bc",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Message dropdown into icons",
+          "description": "",
+          "labels": [],
+          "checkboxes": [
+            {
+              "id": "593e74be-2a25-405b-86d0-a0f786006cfc",
+              "title": "View (eye) / Edit (pen)",
+              "checked": true
+            },
+            {
+              "id": "3c7b6b67-d53e-45c3-a1db-8d157d23b320",
+              "title": "Edit checkmark/cross",
+              "checked": true
+            }
+          ],
+          "comments": []
+        },
+        {
+          "id": "41353337-0365-4bca-92d0-b7be9eb7971e",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "KaTeX copy and tooltip",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "e776faab-6f98-4c40-b6f4-8bfa27324662",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Anchor links tooltips",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "4837fa6c-eae5-4d93-8ffd-bb58b2c6b0a0",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Style media (img etc.)",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "cf50638f-a354-4819-b303-2162df119c4d",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Better table design",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "ac47b261-4aee-4ea8-a1f3-6a8b5fc9e341",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Image copy URL and tooltips",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "0538c18d-486e-40a9-8b55-f244bba68e93",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Message: Edit contents",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "55ce9584-f714-4484-b5fe-721db53f7141",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Codeblock copy functionality",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "013543a8-4cbe-49ed-af5d-b53675933801",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "marked.js to handle message formatting",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "5890544e-acaf-4113-a91e-c11152915c87",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Fix deprecation warning",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "67ca48ce-fa48-47bb-bd6d-7cb47bd27e20",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "DropdownMenu hide when mouse is far away/clicked outside",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "63c5a05d-6dee-4286-9841-1caa9ececd8e",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "use:click",
+          "description": "",
+          "labels": [],
+          "checkboxes": [
+            {
+              "id": "d56aecbd-b818-4337-a36c-176cf5f986cd",
+              "title": "click event listener",
+              "checked": true
+            },
+            {
+              "id": "444438de-44c2-43c0-b286-01c4bddd7bc5",
+              "title": "blur after click",
+              "checked": true
+            },
+            {
+              "id": "647531f0-d2b3-468a-a8d6-d95e339c77d2",
+              "title": "space to click when focused (dont blur)",
+              "checked": true
+            },
+            {
+              "id": "fb3a7e90-c669-4e73-a87f-8a8a48615ef6",
+              "title": "enter to click when focused (dont blur)",
+              "checked": true
+            }
+          ],
+          "comments": []
+        },
+        {
+          "id": "dc5c4045-f4df-4732-97c8-aadac448ca5e",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Option - AI Model",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "e6813197-c15b-434f-8ac9-ae1900fc0beb",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Sometimes ``` is added in  addition to a finished message",
+          "description": "",
+          "labels": [
+            {
+              "id": "2d946e06-ce8d-4a4b-abbc-03cec682a9f7",
+              "title": "Bug",
+              "color": "#eb5a46"
+            }
+          ],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "003d8751-87c4-4944-b850-8fc00292afc0",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Option - API Key",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "eafacbc7-7699-4de2-aaaa-2c75bcfec295",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Initial documentation for electron.js setup",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "267c6ec0-22e3-44d1-b0db-6e2df7a8bbd2",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Type request actions seamlessly",
+          "description": "Consider somehow replacing `concurrent` library, with something that supports Typescript so that typescript can compile into a single electron.cjs module (or something).",
+          "labels": [
+            {
+              "id": "7abdfd77-0433-4e24-94cb-362dbd761134",
+              "title": "Description",
+              "color": "#344563"
+            }
+          ],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "870eddc9-1112-418c-a85c-60f657d19c2f",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Fix tray icon not loading when packaged breaking the app",
+          "description": "",
+          "labels": [
+            {
+              "id": "2d946e06-ce8d-4a4b-abbc-03cec682a9f7",
+              "title": "Bug",
+              "color": "#eb5a46"
+            }
+          ],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "c873e029-7088-4779-b7f5-ef392cc9c453",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Convert electron.cjs into smaller modules of .cts ",
+          "description": "",
+          "labels": [],
+          "checkboxes": [
+            {
+              "id": "9417c8f4-bb13-4ac5-b0dd-f2816af01c4b",
+              "title": "Split into submodules",
+              "checked": true
+            },
+            {
+              "id": "01ab7a3b-afd9-4255-bdbb-f1561c7ad6d5",
+              "title": "Make tsconfig to compile",
+              "checked": true
+            }
+          ],
+          "comments": []
+        },
+        {
+          "id": "9287e5dc-1729-4764-870e-41f448c9e58f",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Create an RequestAction to communicate between Electron.js and Svelte",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "4c0cd9d9-c190-4754-aca4-83b00e4373f1",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Refactor electron.cjs into smaller modules",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "397ade9e-6401-42b7-b9e5-7fc50f4bcee3",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Exit button in settings",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "263057eb-ba14-46f2-97b5-ec0973c99d47",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Message dropdown:  Toggle original original",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "8b3ba18f-1bb7-4188-bc88-fbb8552b74ef",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Anchored dropdowns",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "94a559f2-bf9d-4998-b1bb-6d5ab43ccecf",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Tooltips",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "acc63d12-89c6-4422-be52-555f15ab24a5",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Refactor Chat.svelte",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "8df3da81-ee94-4ae7-aaf8-9fd23f8202ef",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Fix auto-scroll issues",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "e90aafe4-82f8-4563-ab76-abc791736603",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Messages start at the bottom",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "cc6753d0-7d31-4b76-93f6-592bb61279ac",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Remember scroll position",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "bea5c4e1-7458-40e9-8f69-f9bd4fd7f33f",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Stop/Cancel AI Processing",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "b8259f28-c5b5-4a58-9d40-0de31254d108",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Fix code language titles",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "a8c329c9-e899-4255-8f85-d47f98ae0d9d",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Make code blocks when written by AI smooth",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "f5c9cf36-a6b4-4481-8d7c-79940165c224",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Fix laggy markdown render",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "f573aa12-a53b-40aa-8706-120b886edb61",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Add Monospace font for codeblocks",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "0f5301e5-fcca-49ab-a304-fcf010fdcd86",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "When tabbing buttons they act weird",
+          "description": "It was due to the focus outline technique where ::after was missing a `pointer-events: none` and its parent (the button) were missing `position: relative;`",
+          "labels": [
+            {
+              "id": "2d946e06-ce8d-4a4b-abbc-03cec682a9f7",
+              "title": "Bug",
+              "color": "#eb5a46"
+            }
+          ],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "65ca11a2-86a0-49bf-8a5c-07d58e1f11ee",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "When clicking certain buttons such as options it acts weird",
+          "description": "It was due to the focus outline technique where ::after was missing a `pointer-events: none` and its parent (the button) were missing `position: relative;`",
+          "labels": [
+            {
+              "id": "2d946e06-ce8d-4a4b-abbc-03cec682a9f7",
+              "title": "Bug",
+              "color": "#eb5a46"
+            }
+          ],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "592d7edc-1740-4f28-8494-8bf2f365484d",
+          "listId": "e0c682f7-26fe-4683-9136-b965bce9eca1",
+          "title": "Hold to clear",
+          "description": "In this case, isn't it better to give the user an option to \"go back to previous chat\"? Like, an arrow on the left side of \"New chat\", that if pressed, restores the old chat.\n\nInstead of \"Yes to accept\", do \"Undo action\" ",
+          "labels": [
+            {
+              "id": "7abdfd77-0433-4e24-94cb-362dbd761134",
+              "title": "Has comment",
+              "color": "#344563"
+            }
+          ],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
+    }
+  ],
+  "archive": {
+    "lists": [],
+    "cards": [
+      {
+        "id": "a9228a6a-26f5-4697-ad34-bd31d7754275",
+        "listId": "bcbee88c-744f-4d16-84cf-87577a4b9297",
+        "title": "1. Chat processing",
+        "description": "",
+        "labels": [],
+        "checkboxes": [],
+        "comments": []
+      },
+      {
+        "id": "964dbc26-3007-4193-9e91-09eb33109ed1",
+        "listId": "bcbee88c-744f-4d16-84cf-87577a4b9297",
+        "title": "2. GPT's \"Functions\" capabilities",
+        "description": "",
+        "labels": [],
+        "checkboxes": [],
+        "comments": []
+      },
+      {
+        "id": "d96984dc-2fde-4afc-94c7-c9824066feb9",
+        "listId": "59e901a4-a5c3-4fe4-8bd6-39da89dc60be",
+        "title": "Split global.scss into multiple files",
+        "description": "",
+        "labels": [],
+        "checkboxes": [],
+        "comments": []
+      },
+      {
+        "id": "c512d7f6-6cce-4bb0-b3ca-3bf6c4f4abd4",
+        "listId": "59e901a4-a5c3-4fe4-8bd6-39da89dc60be",
+        "title": "...Somehow make Marked extensions compatible with Svelte components",
+        "description": "It would be a big + if the Svelte components specifically don't have to rerender for every markdown update.",
+        "labels": [],
+        "checkboxes": [],
+        "comments": [
+          {
+            "id": "f6e6eec4-3e07-47a0-91b9-c72f0526ac47",
+            "comment": "You can give the element a unique ID, and use tick.then(() => {}), where a Svelte action can take care of the element."
+          }
+        ]
+      },
+      {
+        "id": "e4a82999-8c32-4432-aa47-b3f8cdac8dde",
+        "listId": "bcbee88c-744f-4d16-84cf-87577a4b9297",
+        "title": "Chrome Extension that communicates with Chat",
+        "description": "A button that references the open page from the browser, and gives it to the AI",
+        "labels": [
+          {
+            "id": "ded03b96-a57a-4416-a221-aedfeae81af3",
+            "title": "Idea",
+            "color": "#c377e0"
+          }
+        ],
+        "checkboxes": [],
+        "comments": []
+      }
+    ]
+  },
+  "settings": {
+    "labels": [
+      {
+        "id": "7abdfd77-0433-4e24-94cb-362dbd761134",
+        "title": "Description",
+        "color": "#344563"
+      },
+      {
+        "id": "2d946e06-ce8d-4a4b-abbc-03cec682a9f7",
+        "title": "Bug",
+        "color": "#eb5a46"
+      },
+      {
+        "id": "ded03b96-a57a-4416-a221-aedfeae81af3",
+        "title": "Idea",
+        "color": "#c377e0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+ul, ol {
+	position: relative;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	> li {
+		padding-left: .375em;
+	}
+}
+
+ol {
+	> li::marker {
+		color: hsla(0, 0%, 100%, 0.5);
+	}
+}
+
+blockquote {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 3px;
+		height: 100%;
+		background-color: red;
+	}
+}

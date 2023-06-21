@@ -1,0 +1,75 @@
+pre:has(code) {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color: hsl(216, 28%, 7%);
+	color: white;
+	padding: 20px 20px;
+	padding-top: 40px;
+	border-radius: 6px;
+	border: 1px solid hsla(227, 33%, 80%, .2);
+	margin: 0;
+	transform: translateX(-4px);
+
+	white-space: pre-wrap;
+	overflow: hidden;
+
+	> code {
+		padding: 0 !important;
+		overflow: visible;
+		// Use ligatures
+
+		&, * {
+			font-family: 'Fira Code';
+			font-size: .75rem;
+			// Use all ligatures
+			font-variant-ligatures: normal;
+			font-feature-settings: "calt";
+			line-height: 180%;
+		}
+	}
+
+	// Show language
+	& .copycode, &::after {
+		position: absolute;
+		top: 10px;
+		left: 20px;
+		width: 150px;
+		font-size: .8rem;
+		color: hsla(227, 33%, 80%, 1);
+		margin-bottom: 10px;
+		cursor: pointer;
+		opacity: .5;
+		transition: opacity .075s ease;
+		user-select: none;
+	}
+
+	&::after {
+		top: 8px;
+		display: block;
+		content: 'Click here to copy';
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	&:has(.copycode:hover)::after {
+		opacity: .8;
+	}
+
+	&:has(.copycode:active)::after {
+		opacity: 1;
+	}
+
+	&:has(.copycode.copied)::after {
+		content: 'Copied!';
+	}
+
+	&:hover {
+		.copycode {
+			opacity: 0;
+		}
+		&::after {
+			opacity: .5;
+		}
+	}
+}

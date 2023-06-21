@@ -1,0 +1,19 @@
+body,
+html,
+head {
+	height: 100%;
+	background-color: transparent;
+	font-size: 17px;
+	margin: 0;
+
+	opacity: .95;
+
+	&:focus-within,
+	&:focus,
+	&:focus-visible,
+	&:hover {
+		opacity: 1;
+	}
+
+	overflow: hidden;
+}

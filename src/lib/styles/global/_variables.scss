@@ -1,0 +1,31 @@
+@use 'scss-color-var/var';
+@use 'scss-color-var/v' as *;
+
+body {
+	// Color Variables
+
+	@include var.colors(
+		$primary: hsla(227, 22%, 25%, 1),
+
+		$good: hsl(145, 70%, 35%),
+		$good-hover: (good, good, 40%),
+
+		$warn: hsla(50, 20%, 50%, .8),
+		$warn-hover: hsla(50, 20%, 50%, 1),
+		$warn-color: hsl(50, 100%, 85%),
+		$warn-color-hover: hsl(50, 100%, 90%),
+
+		$button-default: hsl(227, 25%, 36%),
+		$button-default-hover: (button-default, button-default, 45%),
+		
+		$ai-message: (primary, primary, 18%),
+		$user-message: (primary, primary, 13%),
+	);
+
+	// Other variables
+
+	--chat-padding: 50px;
+}
+
+
+

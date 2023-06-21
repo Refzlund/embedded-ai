@@ -1,0 +1,61 @@
+@use 'scss-color-var/v' as *;
+@use 'scss-color-var/var';
+
+p {
+	max-width: 100%;
+	margin: 0;
+	width: 70ch;
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	position: relative;
+	color: var.Lightness(primary, 80%);
+	text-decoration: dotted underline;
+	text-decoration-color: hsla(var.H(primary), var.S(primary), 80%, .4);
+	transition: color .1s ease, text-decoration-color .1s ease;
+	cursor: pointer;
+
+	&:hover {
+		color: var.Lightness(primary, 90%);
+		text-decoration-color: hsla(var.H(primary), var.S(primary), 80%, .6);
+	}
+
+	&::after {
+		content: ' ↗';
+	}
+}
+
+ol {
+	margin: 0;
+	line-height: 100%;
+}
+
+img {
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+code {
+	font-family: 'Fira Code';
+	font-size: .8rem;
+	background-color: hsla(216, 28%, 7%, .8);
+	margin: 0px;
+	padding: 4px 7px;
+	border-radius: 5px;
+	color: hsla(0, 0%, 100%, .9);
+}
+
+hr {
+	width: 100%;
+	opacity: .1;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
