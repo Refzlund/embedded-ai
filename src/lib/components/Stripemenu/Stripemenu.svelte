@@ -34,6 +34,7 @@
 				offset: [6, -6],
 				width: '500px'
 			}}
+			disabled={!$settings?.apiKey}
 			use:tooltip={{ text: 'Chat History' }}
 		) #[Icon(icon={icons.history})]
 		button.icon.settings(
@@ -43,10 +44,10 @@
 				placement: 'top-start', 
 				offset: [6, -6]
 			}}
-			class:model={$appSettings.gptModel}
+			class:model={$appSettings?.gptModel}
 			use:tooltip={{ text: 'App Settings' }}
 		) #[Icon(icon={icons.settings})]
-		+if('$appSettings.gptModel')
+		+if('$appSettings?.gptModel')
 			span.gptmodel {models.find(v => v.model === $appSettings.gptModel).name}
 		div(style:width='100%')
 		span.estprice(
@@ -63,12 +64,14 @@
 				button.send.icon(
 					--button__hover='hsla(145, 70%, 40%, 1)'
 					--button='hsl(145, 70%, 35%)'
-					tab-index='-1'
+					tabindex='-1'
+					disabled={!$settings?.apiKey || !$settings?.gptModel}
 				) #[Icon(icon={icons.send})] Send
 				button.send.icon(
 					--button__hover='hsla(0, 60%, 40%, 1)'
 					--button='hsl(0, 60%, 35%)'
-					tab-index='-1'
+					tabindex='-1'
+					disabled={!$settings?.apiKey || !$settings?.gptModel}
 				) Stop
 
 </template>
@@ -152,11 +155,6 @@
 		align-items: center;
 		gap: 12px;
 		width: 100%;
-	}
-
-	.clear {
-		min-width: 90px;
-		border: 1px solid hsl(50, 20%, 60%);
 	}
 
 	.send {
