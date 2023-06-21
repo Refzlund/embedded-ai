@@ -3,12 +3,23 @@ import { markedHighlight, markedImage, markedKatex, markedLink } from './marked'
 import { marked } from 'marked'
 import hljs from 'highlight.js'
 
+Promise.all([
+	// @ts-expect-error
+	import('marked-xhtml'),
+	// @ts-expect-error
+	import('marked-extended-tables')
+]).then(([
+	xhtml,
+	extendedTables
+]) => {
+	marked.use(
+		xhtml.markedXhtml(),
+		extendedTables.default()
+	)
+})
+
 marked.use(
 	markedKatex(),
-	// @ts-expect-error
-	(await import('marked-xhtml')).markedXhtml(),
-	// @ts-expect-error
-	(await import("marked-extended-tables")).default(),
 	markedHighlight,
 	markedImage,
 	markedLink
